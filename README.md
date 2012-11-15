@@ -10,7 +10,7 @@ Add `gem iscjs` to your Gemfile
 
 Version 0.1 supports the following plugins:
 
-ez_tip with QTip2 - `//= require iscjs/qtip`
+ez_qtip with QTip2 - `//= require iscjs/qtip`
 
 JQuery plugins:
 
