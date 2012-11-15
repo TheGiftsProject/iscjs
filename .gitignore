@@ -1,0 +1,5 @@
+.idea
+*.gem
+spec/.dummy/tmp
+spec/.dummy/log
+.sass-cache
