@@ -1,6 +1,6 @@
 # ISCJS
 
-This gem allows you to add any of our home brewed JavaScript plugins to your
+This gem includes all of the JavaScript plugins we wrote at eBay ISC.
 
 ## Installation
 
