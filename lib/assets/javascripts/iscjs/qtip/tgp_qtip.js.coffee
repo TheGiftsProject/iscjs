@@ -7,11 +7,13 @@ jQuery.qtipDeepExtend = (extended, extendee) ->
     if extendee.length?
       jQuery.qtipDeepExtend(extended, extendeeArg) for extendeeArg in extendee
     else
+      if extendee.style?.classes? and extended.style?.classes?
+        extendee.style.classes += ' ' + extended.style.classes
       jQuery.extend(true, extended, extendee)
   else
     jQuery.extend(true, extended, jQuery.tgp_qtips.qtips[extendee]) if typeof extendee == "string"
 
-jQuery.fn.tgp_qtip = () ->
+jQuery.fn.ezQtip = ->
   qtip_params = {}
 
   for param in arguments
@@ -20,8 +22,11 @@ jQuery.fn.tgp_qtip = () ->
 
   @qtip(qtip_params)
 
+jQuery.fn.tgp_qtip = ->
+  @ezQtip.apply(@, arguments)
+
 jQuery.fn.error_qtip = (message, position = "above") ->
-  @tgp_qtip("error_red", "semi-modal", position, "big_tip",
+  @ezQtip("error_red", "semi-modal", position, "big_tip",
     content: message
   )
 
