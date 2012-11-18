@@ -25,7 +25,7 @@ jQuery.fn.enableAll = ->
     $(@).attr('disabled', null)
 
 # TOGGLERS
-jQuery.fn.toggleClass = (condition)->
+jQuery.fn.toggleEnable = (condition)->
   if condition then @enable() else @disable()
 
 jQuery.fn.toggleInput = (condition)->
