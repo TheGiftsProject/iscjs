@@ -1,8 +1,8 @@
-jQuery.fn.disableClass = ->
+jQuery.fn.disable = ->
   @each ->
     $(@).addClass('disabled')
 
-jQuery.fn.enableClass = ->
+jQuery.fn.enable = ->
   @each ->
     $(@).removeClass('disabled')
 
@@ -14,14 +14,15 @@ jQuery.fn.enableInput = ->
   @each ->
     $(@).attr('disabled', null)
 
-jQuery.fn.disable = ->
+jQuery.fn.disableAll = ->
   @each ->
     $(@).addClass('disabled')
     $(@).attr('disabled', 'disabled')
 
-jQuery.fn.enable = ->
+jQuery.fn.enableAll = ->
   @each ->
-    $(@).removeClass('disabled')    $(@).attr('disabled', null)
+    $(@).removeClass('disabled')
+    $(@).attr('disabled', null)
 
 # TOGGLERS
 jQuery.fn.toggleClass = (condition)->
@@ -30,7 +31,7 @@ jQuery.fn.toggleClass = (condition)->
 jQuery.fn.toggleInput = (condition)->
   if condition then @enableInput() else @disableInput()
 
-jQuery.fn.toggle = (condition)->
+jQuery.fn.toggleAll = (condition)->
   if condition then @enableAll() else @disableAll()
 
 # QUERIES
