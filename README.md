@@ -11,10 +11,15 @@ Add `gem iscjs` to your Gemfile
 Version 0.1 supports the following plugins:
 
 ezQtip with QTip2 - `//= require iscjs/qtip` (same the JS and CSS)
+
     - Added support for classes concatenation. You can now define custom ezQtip styles with classes so when you provide
+
       an additional hash with classes, they will be concatenated to the final hash.
+
     - You can access ezQtip with element.ezQtip or element.tgp_qtip (backwards compatibility)
+
     - You can define your own custom ezQtip hashes inside jQuery.ezQtips.
+
       Example:
       ```coffee
         jQuery.ezQtips =
