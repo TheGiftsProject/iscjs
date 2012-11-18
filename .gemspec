@@ -2,7 +2,7 @@
 # project in your rails apps through git.
 Gem::Specification.new do |s|
   s.name = "iscjs"
-  s.version = "0.1.3"
+  s.version = "0.1.4"
   s.authors     = ["NotNinjas Productions"]
   s.email       = ["jobs-il@ebay.com"]
   s.homepage    = "http://github.com/TheGiftsProject/iscjs"
