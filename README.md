@@ -10,7 +10,7 @@ Add `gem iscjs` to your Gemfile
 
 Version 0.1.4 supports the following plugins:
 
-ezQtip with QTip2 - `//= require iscjs/qtip` (same the JS and CSS)
+__ezQtip with QTip2__ - `//= require iscjs/qtip` (same the JS and CSS)
 
  * Added support for classes concatenation. You can now define custom ezQtip styles with classes so when you provide
 
@@ -29,14 +29,14 @@ ezQtip with QTip2 - `//= require iscjs/qtip` (same the JS and CSS)
                     classes: 'some-custom-style'
     ```
 
-jQuery plugins:
+### jQuery plugins
 
-jQuery Placeholder - `//= require iscjs/jquery/placeholder`
+* __jQuery Placeholder__ - `//= require iscjs/jquery/placeholder`
 
-jQuery Shake - `//= require iscjs/jquery/shake`
+* __jQuery Shake__ - `//= require iscjs/jquery/shake`
 
-jQuery Toggle Display - `//= require iscjs/jquery/toggle_display`
+* __jQuery Toggle Display__ - `//= require iscjs/jquery/toggle_display`
 
-jQuery Disable - `//= require iscjs/jquery/disable`
+* __jQuery Disable__ - `//= require iscjs/jquery/disable`
 
 You can also specify all of 'em: `//= require iscjs/jquery/all`
