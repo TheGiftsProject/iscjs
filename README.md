@@ -37,4 +37,6 @@ JQuery Shake - `//= require iscjs/jquery/shake`
 
 JQuery Toggle Display - `//= require iscjs/jquery/toggle_display`
 
+JQuery Disable - `//= require iscjs/jquery/disable`
+
 You can also specify all of 'em: `//= require iscjs/jquery/all`
