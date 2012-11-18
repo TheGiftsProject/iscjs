@@ -31,6 +31,10 @@ describe ISCJS do
     it "should find jquery/toggle_display" do
       @app.assets.find_asset("iscjs/jquery/toggle_display").should_not be_nil
     end
+
+    it "should find jquery/disable" do
+      @app.assets.find_asset("iscjs/jquery/disable").should_not be_nil
+    end
   end
 
 end
