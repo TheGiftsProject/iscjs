@@ -11,7 +11,10 @@ jQuery.qtipDeepExtend = (extended, extendee) ->
         extendee.style.classes += ' ' + extended.style.classes
       jQuery.extend(true, extended, extendee)
   else
-    jQuery.extend(true, extended, jQuery.tgp_qtips.qtips[extendee]) if typeof extendee == "string"
+    jQuery.extend(true, extended, $.fetchQtip(extendee)) if typeof extendee == "string"
+
+jQuery.fetchQtip = (key) ->
+  jQuery.tgp_qtips.qtips[key] || jQuery.ezQtips?.qtips[key]
 
 jQuery.fn.ezQtip = ->
   qtip_params = {}
