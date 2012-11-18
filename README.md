@@ -29,14 +29,14 @@ ezQtip with QTip2 - `//= require iscjs/qtip` (same the JS and CSS)
                     classes: 'some-custom-style'
     ```
 
-JQuery plugins:
+jQuery plugins:
 
-JQuery Placeholder - `//= require iscjs/jquery/placeholder`
+jQuery Placeholder - `//= require iscjs/jquery/placeholder`
 
-JQuery Shake - `//= require iscjs/jquery/shake`
+jQuery Shake - `//= require iscjs/jquery/shake`
 
-JQuery Toggle Display - `//= require iscjs/jquery/toggle_display`
+jQuery Toggle Display - `//= require iscjs/jquery/toggle_display`
 
-JQuery Disable - `//= require iscjs/jquery/disable`
+jQuery Disable - `//= require iscjs/jquery/disable`
 
 You can also specify all of 'em: `//= require iscjs/jquery/all`
